@@ -4,13 +4,13 @@
 
 ## 1. Initials 声母
 
-**b p m f d t n l g k h j q x zh ch sh r z c s y w **
+**b p m f d t n l g k h j q x zh ch sh r z c s y w**
 
 >  声母并不是本音，我们念的音加上了辅助的韵母，实际声母发音是轻声。
 >
 > The initial is not the original sound. The sound we read is added with auxiliary finals. The actual initial pronunciation in a whole word is lightly sound.
 >
-> **bo po mo fo de te ne le ge ke he ji qi xi zhi chi shi ri zi ci shi***
+> **bo po mo fo de te ne le ge ke he ji qi xi zhi chi shi ri zi ci shi**
 
 
 
@@ -28,7 +28,7 @@
 
 ## 2. Finals 韵母
 
-**a o e i u ü ai ei ui ao ou iu ie üe er an en in un ün ang eng ing ong **
+**a o e i u ü ai ei ui ao ou iu ie üe er an en in un ün ang eng ing ong**
 
 >  compaund finals  is just read the two parts  togerther quickly
 
