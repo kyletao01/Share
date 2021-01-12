@@ -47,7 +47,7 @@
 - er == e + roll tongue
 - front nasal （n） just plus english sound n，  rear nasal （ng）：Nasal vibration
 - example :   （There may be many words in one pronunciation）
-  - ai 爱   ao 要    an 看   mang 忙     
+  - ai 爱   yao 要    kan 看   mang 忙     
   - you 有   yong用  
   - mei 没   er 耳   ren 人   leng 冷
   - xia 下   xiao 小  xiu 休  xie 谢     xian 现   ming 明   xiong 熊
