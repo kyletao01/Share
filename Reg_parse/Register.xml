@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ipxact:component xmlns:armchina="www.armchina.com" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ipxact:vendor>armchina</ipxact:vendor>
+	<ipxact:library>zhouyi</ipxact:library>
+	<ipxact:name>zy_kun</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:memoryMaps>
+		<ipxact:memoryMap>
+			<ipxact:name>AIPU Control Registers Group 1</ipxact:name>
+			<ipxact:addressUnitBits>32</ipxact:addressUnitBits>
+			<ipxact:addressBlock>
+				<ipxact:name>crg1_tec0</ipxact:name>
+				<ipxact:displayName>AIPU Control Registers Group 1</ipxact:displayName>
+				<ipxact:baseAddress>0x000</ipxact:baseAddress>
+				<ipxact:range>0x100000000</ipxact:range>
+				<ipxact:width>32</ipxact:width>
+				<ipxact:register>
+					<ipxact:name>csr_a0</ipxact:name>
+					<ipxact:displayName>Base Address Register 0 For TEC 0</ipxact:displayName>
+					<ipxact:description></ipxact:description>
+					<ipxact:addressOffset>0x000</ipxact:addressOffset>
+					<ipxact:access>read-only</ipxact:access>
+					<ipxact:size>32</ipxact:size>
+					<ipxact:resets>
+						<ipxact:reset>
+							<ipxact:value>0xf0000000</ipxact:value>
+							<ipxact:mask>0xffffffff</ipxact:mask>
+						</ipxact:reset>
+					</ipxact:resets>
+					<ipxact:field>
+						<ipxact:name>ls0_base0</ipxact:name>
+						<ipxact:displayName>LSRAM Address Base 0</ipxact:displayName>
+						<ipxact:description>Fixed address pointer to point to the start of LSRAM 0.</ipxact:description>
+						<ipxact:bitOffset>0</ipxact:bitOffset>
+						<ipxact:bitWidth>32</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0xf0000000</ipxact:value>
+								<ipxact:mask>0xffffffff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+				</ipxact:register>
+				<ipxact:register>
+					<ipxact:name>csr_a1</ipxact:name>
+					<ipxact:displayName>Base Address Register 1 For TEC 0</ipxact:displayName>
+					<ipxact:description></ipxact:description>
+					<ipxact:addressOffset>0x001</ipxact:addressOffset>
+					<ipxact:access>read-only</ipxact:access>
+					<ipxact:size>32</ipxact:size>
+					<ipxact:resets>
+						<ipxact:reset>
+							<ipxact:value>0xf0080000</ipxact:value>
+							<ipxact:mask>0xffffffff</ipxact:mask>
+						</ipxact:reset>
+					</ipxact:resets>
+					<ipxact:field>
+						<ipxact:name>ls1_base1</ipxact:name>
+						<ipxact:displayName>LSRAM Address Base 1</ipxact:displayName>
+						<ipxact:description>Fixed address pointer to point to the start of LSRAM 1.</ipxact:description>
+						<ipxact:bitOffset>0</ipxact:bitOffset>
+						<ipxact:bitWidth>32</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0xf0080000</ipxact:value>
+								<ipxact:mask>0xffffffff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+				</ipxact:register>
+				<ipxact:register>
+					<ipxact:name>csr_a2</ipxact:name>
+					<ipxact:displayName>Base Address Register 2 For TEC 0</ipxact:displayName>
+					<ipxact:description></ipxact:description>
+					<ipxact:addressOffset>0x002</ipxact:addressOffset>
+					<ipxact:access>read-write</ipxact:access>
+					<ipxact:size>32</ipxact:size>
+					<ipxact:resets>
+						<ipxact:reset>
+							<ipxact:value>0xf0000000</ipxact:value>
+							<ipxact:mask>0xffffffff</ipxact:mask>
+						</ipxact:reset>
+					</ipxact:resets>
+					<ipxact:field>
+						<ipxact:name>ls0_base2_h</ipxact:name>
+						<ipxact:displayName>LSRAM0 Address Base 2 High Address</ipxact:displayName>
+						<ipxact:description>Fixed address for each TEC.</ipxact:description>
+						<ipxact:bitOffset>20</ipxact:bitOffset>
+						<ipxact:bitWidth>12</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0xf00</ipxact:value>
+								<ipxact:mask>0xfff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>address_bit</ipxact:name>
+						<ipxact:displayName>Address bit</ipxact:displayName>
+						<ipxact:description>Address bit to point to either LSRAM 0/1.</ipxact:description>
+						<ipxact:bitOffset>19</ipxact:bitOffset>
+						<ipxact:bitWidth>1</ipxact:bitWidth>
+						<ipxact:access>read-write</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0x1</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>rsd_0</ipxact:name>
+						<ipxact:displayName>Reserved</ipxact:displayName>
+						<ipxact:reserved>true</ipxact:reserved>
+						<ipxact:description>-</ipxact:description>
+						<ipxact:bitOffset>15</ipxact:bitOffset>
+						<ipxact:bitWidth>4</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0xf</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>ls0_base2_l</ipxact:name>
+						<ipxact:displayName>LSRAM0 Address Base 2 Low Address</ipxact:displayName>
+						<ipxact:description>Base address.</ipxact:description>
+						<ipxact:bitOffset>0</ipxact:bitOffset>
+						<ipxact:bitWidth>15</ipxact:bitWidth>
+						<ipxact:access>read-write</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0x7fff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+				</ipxact:register>
+				<ipxact:register>
+					<ipxact:name>csr_a3</ipxact:name>
+					<ipxact:displayName>Base Address Register 3 For TEC 0</ipxact:displayName>
+					<ipxact:description></ipxact:description>
+					<ipxact:addressOffset>0x003</ipxact:addressOffset>
+					<ipxact:access>read-write</ipxact:access>
+					<ipxact:size>32</ipxact:size>
+					<ipxact:resets>
+						<ipxact:reset>
+							<ipxact:value>0xf0000000</ipxact:value>
+							<ipxact:mask>0xffffffff</ipxact:mask>
+						</ipxact:reset>
+					</ipxact:resets>
+					<ipxact:field>
+						<ipxact:name>ls1_base3_h</ipxact:name>
+						<ipxact:displayName>LSRAM1 Address Base 3 High Address</ipxact:displayName>
+						<ipxact:description>Fixed address for each TEC.</ipxact:description>
+						<ipxact:bitOffset>20</ipxact:bitOffset>
+						<ipxact:bitWidth>12</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0xf00</ipxact:value>
+								<ipxact:mask>0xfff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>address_bit</ipxact:name>
+						<ipxact:displayName>Address bit</ipxact:displayName>
+						<ipxact:description>Address bit to point to either LSRAM 0/1.</ipxact:description>
+						<ipxact:bitOffset>19</ipxact:bitOffset>
+						<ipxact:bitWidth>1</ipxact:bitWidth>
+						<ipxact:access>read-write</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0x1</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>rsd_0</ipxact:name>
+						<ipxact:displayName>Reserved</ipxact:displayName>
+						<ipxact:reserved>true</ipxact:reserved>
+						<ipxact:description>-</ipxact:description>
+						<ipxact:bitOffset>15</ipxact:bitOffset>
+						<ipxact:bitWidth>4</ipxact:bitWidth>
+						<ipxact:access>read-only</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0xf</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+					<ipxact:field>
+						<ipxact:name>ls1_base3_l</ipxact:name>
+						<ipxact:displayName>LSRAM0 Address Base 3 Low Address</ipxact:displayName>
+						<ipxact:description>Base address.</ipxact:description>
+						<ipxact:bitOffset>0</ipxact:bitOffset>
+						<ipxact:bitWidth>15</ipxact:bitWidth>
+						<ipxact:access>read-write</ipxact:access>
+						<ipxact:resets>
+							<ipxact:reset>
+								<ipxact:value>0x0</ipxact:value>
+								<ipxact:mask>0x7fff</ipxact:mask>
+							</ipxact:reset>
+						</ipxact:resets>
+					</ipxact:field>
+				</ipxact:register>
+			</ipxact:addressBlock>
+		</ipxact:memoryMap>
+	</ipxact:memoryMaps>
+</ipxact:component>
